@@ -1,0 +1,23 @@
+.nsm-icon-picker .selectize-input {
+    display: flex !important;
+}
+
+.nsm-icon-picker-option,
+.nsm-icon-picker-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.nsm-icon-picker-item {
+    height: 20px;
+}
+
+.nsm-icon-picker-item svg,
+.nsm-icon-picker-option svg,
+.nsm-icon-picker-item img,
+.nsm-icon-picker-option img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}

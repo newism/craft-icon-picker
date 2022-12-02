@@ -1,0 +1,23 @@
+{% import "_includes/forms" as forms %}
+
+{% set id = id ?? "iconPicker#{random()}" -%}
+
+{{ forms.select({
+    id: id,
+    name: field.handle,
+    options: null,
+    value: value,
+    errors: field.getErrors(),
+    class: 'selectize nsm-icon-picker',
+    inputAttributes: {
+        data: {
+            'icon-picker-optgroups': optgroups,
+            'icon-picker-options': options,
+            'icon-picker-value': value,
+        }
+    }
+}) }}
+
+{% js %}
+    new window.Newism.IconPicker('#{{ id|namespaceInputId|e('js') }}');
+{% endjs %}

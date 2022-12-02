@@ -1,0 +1,45 @@
+{
+  "name": "newism/craft-icon-picker",
+  "type": "craft-plugin",
+  "license": "proprietary",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "icon"
+  ],
+  "authors": [
+    {
+      "name": "Leevi Graham",
+      "email": "leevi@newism.com.au"
+    }
+  ],
+  "support": {
+    "email": "leevi@newism.com.au",
+    "source": "https://github.com/newism/craft-icon-picker",
+    "issues": "https://github.com/newism/craft-icon-picker/issues?state=open",
+    "forum": "https://github.com/newism/craft-icon-picker/discussions",
+    "docs": "https://github.com/newism/craft-icon-picker/blob/main/README.md"
+  },
+  "require": {
+    "php": ">=8.1",
+    "craftcms/cms": "^4.2.2",
+    "symfony/finder": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Newism\\IconPicker\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Icon Picker",
+    "handle": "icon-picker"
+  },
+  "config": {
+    "allow-plugins": {
+      "craftcms/plugin-installer": true,
+      "yiisoft/yii2-composer": true
+    }
+  }
+}

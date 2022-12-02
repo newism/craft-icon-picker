@@ -1,0 +1,21 @@
+{% import '_includes/forms.twig' as forms %}
+
+{{ forms.autosuggestField({
+    first: true,
+    label: field.attributeLabel('iconFolderPath'),
+    instructions: field.getAttributeHint('iconFolderPath'),
+    name: 'iconFolderPath',
+    value: field.iconFolderPath | default,
+    suggestEnvVars: true,
+    suggestAliases: true
+}) }}
+
+{{ forms.autosuggestField({
+    first: true,
+    label: field.attributeLabel('iconFolderUrl'),
+    instructions: field.getAttributeHint('iconFolderUrl'),
+    name: 'iconFolderUrl',
+    value: field.iconFolderUrl | default,
+    suggestEnvVars: true,
+    suggestAliases: true
+}) }}
